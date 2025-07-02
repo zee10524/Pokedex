@@ -1,0 +1,20 @@
+.search-wrapper {
+    margin: 1rem 0;
+}
+
+.search-wrapper input {
+    width: 60%;
+    max-width: 400px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid #bdbdbd;
+    transition: 0.3s ease;
+    outline: none;
+    text-align: center;
+}
+
+.search-wrapper input:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 10px rgba(66, 165, 245, 0.5);
+}

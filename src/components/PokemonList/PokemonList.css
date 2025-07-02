@@ -1,0 +1,51 @@
+.pokemon-list-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pokemon-list-wrapper > div:first-child {
+  font-size: 1.8rem;
+  color: #263238;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.pokemon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* --- Pagination Controls --- */
+.controls {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.controls button {
+  padding: 0.7rem 1.5rem;
+  background-color: #42a5f5;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(66, 165, 245, 0.3);
+}
+
+.controls button:hover {
+  background-color: #1e88e5;
+  transform: translateY(-2px);
+}
+
+.controls button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
